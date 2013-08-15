@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ToyCameraViewController : UIViewController
+@interface ToyCameraViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@property (nonatomic, retain) IBOutlet UIImageView *aImageView;
+
+-(IBAction)doCamera:(id)sender;
+-(IBAction)doFilter:(id)sender;
+-(IBAction)doSave:(id)sender;
 
 @end
