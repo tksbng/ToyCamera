@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ToyCameraViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface ToyCameraViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate,
+UIActionSheetDelegate>
 
 @property (nonatomic, retain) IBOutlet UIImageView *aImageView;
 

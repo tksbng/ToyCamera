@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="wgN-M8-3bw">
-                                <rect key="frame" x="-5" y="504" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="504" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="カメラ" id="IyT-Ex-Aqh">
@@ -35,9 +35,16 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="jOT-Yl-1oM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="aImageView" destination="jOT-Yl-1oM" id="vBh-Za-BAz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,6 +57,7 @@
                 <relationship kind="action" name="doCamera:"/>
                 <relationship kind="action" name="doFilter:"/>
                 <relationship kind="action" name="doSave:"/>
+                <relationship kind="outlet" name="aImageView" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>
